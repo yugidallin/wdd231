@@ -1,0 +1,47 @@
+body {
+  max-width: 1080px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  max-height: none;
+  opacity: 1;
+  justify-content: space-evenly;
+}
+main {
+  margin: 0 auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "course place"
+    "certificate certificate";
+  gap: 0.5rem;
+}
+.course {
+  grid-area: course;
+}
+.place {
+  grid-area: place;
+}
+.certificate {
+  grid-area: certificate;
+}
+#menu {
+  display: none;
+}
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.courses {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+}

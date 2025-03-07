@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231 Home | Dallin Job Cabaliza</title>
@@ -8,34 +8,65 @@
     <meta name="keywords" content="WDD 231, Home, Dallin Job Cabaliza">
     <meta name="author" content="Dallin Cabaliza">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width:680px)">
     <script src="scripts/home.js" defer></script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <header>
-        <img src="images/profile.jpg" alt="profile picture" width="150" height="150">
-        <h1>Dallin Job Cabaliza</h1>
+      <h1>
+        <span class="profile-image">
+          <img src="images/profile-small.webp" alt="profile picture" width="150" height="150">
+        </span>
+        <span class="name">Dallin Job Cabaliza</span>
+      </h1>
+      <button id="menu" aria-label="Toggle navigation menu"></button>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Chamber</a></li>
-            <li><a href="contact.html">Github Profile</a></li>
-            <li><a href="www.linkedin.com/in/dallincabaliza">LinkedIn</a></li>
-        </ul>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">Chamber</a>
+      <a href="contact.html">Github Profile</a>
+      <a href="https://www.linkedin.com/in/dallincabaliza">LinkedIn</a>
     </nav>
     <main>
-        <h1>Home</h1>
-        <section>
-            <h2>Course Work</h2>
+      <h1 class="cur-page">Home</h1>
+      <div class="container">
+        <section class="course">
+          <h2>Course Work</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
         </section>
-        <section>
-            <h2>Taguig, Philippines</h2>
+        <section class="place">
+          <h2>Taguig, Philippines</h2>
+          <div class="img-container">
+            <picture>
+              <source media="(min-width: 600px)" srcset="images/bgc.webp">
+              <img src="images/bgc-small.webp" alt="Taguig, Philippines" style="width: auto;">
+            </picture>
+            <p>Bonifacio Global City</p>
+          </div>
         </section>
-        <section></section>
-            <h2>Web and Computer Programming Certificate</h2>
+        <section class="certificate">
+          <h2>Web and Computer Programming Certificate</h2>
+          <div class="filter-buttons">
+            <button class="active">All</button>
+            <button>CSE</button>
+            <button>WDD</button>
+          </div>
+          <div class="courses"></div>
+          <div id="totalCredits"></div>
         </section>
+      </div>
     </main>
-    <footer><p><span id="currentYear"></span> Dallin Cabaliza | Philippines</p>
-        <p id="lastModified"></p></footer>
-</body>
+    <footer>
+      <p><span id="currentYear"></span> Dallin Cabaliza | Philippines</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
 </html>
