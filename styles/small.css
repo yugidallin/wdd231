@@ -36,6 +36,8 @@ header {
 .profile-image img {
   border-radius: 50%;
   object-fit: cover;
+  width: 150px;
+    height: 150px;
 }
 .name {
   font-size: 2rem;
@@ -119,6 +121,10 @@ ul {
   display: grid;
   padding: 1rem;
   text-align: center;
+}
+.img-container img {
+  width: 100%;
+  height: auto;
 }
 .courses {
   display: grid;
