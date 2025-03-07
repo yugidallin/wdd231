@@ -2,10 +2,11 @@
   box-sizing: border-box;
 }
 :root {
-  --main-color: #1a5d7e;
-  --secondary-color: #a3733f;
-  --accent-color: #ecd67f;
-  --third-color: #f1efef;
+  --main-color: #1369ab;
+  --secondary-color: #cfe2f3;
+  --accent-color: #5e98ce;
+  --third-color: #ecf0f3;
+  --forth-color: #0c1013;
 }
 body {
   margin: 0 auto;
@@ -20,7 +21,7 @@ header,
 h2,
 footer {
   background-color: var(--main-color);
-  color: var(--third-color);
+  color: var(--forth-color);
 }
 header {
   display: flex;
@@ -70,7 +71,7 @@ header h1 {
 .nav-links a {
   margin: 10px 0;
   text-decoration: none;
-  color: var(--third-color);
+  color: var(--forth-color);
   position: relative;
   padding-bottom: 2px;
 }
@@ -117,7 +118,7 @@ ul {
   gap: 1rem;
 }
 .course-card {
-  color: #fff;
+  color:var(--forth-color);
   padding: 0.5rem;
   margin: 0.5rem;
   border-radius: 5px;
@@ -125,10 +126,10 @@ ul {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
 }
 .course-card.completed {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 .course-card.incomplete {
-  background-color: #ccc;
+  background-color: var(--third-color);
   color: #666;
 }
 .filter-buttons {
