@@ -77,6 +77,11 @@ header h1 {
   position: relative;
   padding-bottom: 2px;
 }
+.nav-links a.active {
+    color: var(--forth-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent-color);
+}
 .nav-links a:not(.active)::after {
   content: "";
   position: absolute;
