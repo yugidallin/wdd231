@@ -21,7 +21,9 @@ header,
 h2,
 footer {
   background-color: var(--main-color);
-  color: var(--forth-color);
+  color: var(--third-color);
+  font-weight: bolder;
+  font-size: x-large;
 }
 header {
   display: flex;
@@ -36,7 +38,7 @@ header {
   object-fit: cover;
 }
 .name {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 header h1 {
   display: flex;
@@ -118,7 +120,7 @@ ul {
   gap: 1rem;
 }
 .course-card {
-  color:var(--forth-color);
+  color: var(--forth-color);
   padding: 0.5rem;
   margin: 0.5rem;
   border-radius: 5px;
