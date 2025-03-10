@@ -1,0 +1,28 @@
+{
+    "family_name": "Ward",
+    "move_in_date": "2019-01-01",
+    "number_of_peple": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "John",
+            "gender": "Male",
+            "birthdate": "1980-01-01"
+        },
+        {
+            "name": "Jane",
+            "gender": "Female",
+            "birthdate": "1980-01-01"
+        },
+        {
+            "name": "Jill",
+            "gender": "Female",
+            "birthdate": "2000-01-01"
+        },
+        {
+            "name": "Jack",
+            "gender":"Male",
+            "birthdate": "2000-01-01"
+        }
+    ]
+}
