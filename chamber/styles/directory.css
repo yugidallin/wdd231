@@ -1,0 +1,111 @@
+
+header h1 {
+  display: none;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: minmax(400px, 1fr);
+  grid-gap: 15px;
+  padding: 2em;
+  justify-content: center;
+}
+
+#cards.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+#cards.list {
+  display: block;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+
+#cards.list section {
+  display: block;
+  margin-bottom: 1em;
+  min-height: 183.8px;
+}
+
+#cards.list .card h2,
+#cards.list .card a,
+#cards.list .card p:nth-of-type(3) {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#cards.list .card a {
+  text-decoration: none;
+}
+
+section {
+  box-shadow: 3px 3px 8px #000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  background: var(--third-color);
+  text-align: center;
+  border-radius: 10px;
+  color: var(--forth-color);
+}
+
+.view-toggle {
+  text-align: center;
+  margin: 1em;
+}
+.view-toggle button {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background-color: var(--third-color);
+  border-radius: 5px;
+  border: 1px solid var(--forth-color);
+}
+
+.view-toggle button:hover {
+  background-color: var(--main-color);
+  color: var(--third-color);
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+}
+
+.card p {
+  display: block;
+}
+
+
+@media screen and (min-width: 451px) {
+  body {
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "navbar navbar"
+      "main main"
+      "footer footer";
+  }
+  header {
+    grid-area: header;
+  }
+  nav {
+    grid-area: navbar;
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+
+  #cards {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  #cards.list section {
+    min-height: auto;
+  }
+}

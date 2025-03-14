@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="description" content="Members of the Chamber of Commerce">
+    <meta name="author" content="Dallin Cabaliza">
+    <link rel="icon" href="images/chamberfavicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <meta og:title="Directory">
+    <meta og:type="website">
+    <meta og:image="images/TCC-full-logo-vertical.png">
+    <meta og:url="yugidallin.github.io/wdd231/chamber/directory.html">
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(min-width: 680px)" srcset="images/TCC-full-logo-horizontal-resize.png" class = "large-logo ">
+            <img src="images/TCC-logo-small.png" alt="Chamber of Commerce Logo" loading="eager" class="small-logo">
+        </picture>
+        <h1>Directory</h1>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+    </header>
+    <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Discover</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="#">Join</a>
+    </nav>
+    <main>
+        <div class="view-toggle">
+            <button id="grid">&#9638;</button>
+            <button id="list">&#9635;</button>
+        </div>
+        <div id="cards" class="grid"></div>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> Dallin Cabaliza | Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

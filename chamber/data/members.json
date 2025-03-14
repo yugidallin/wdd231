@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Horizon",
+            "address": "123 Elm St",
+            "phonenumber": "123-456-7890",
+            "website": "www.horizon.com",
+            "imageurl": "images/company-logo-1.png",
+            "memlevel": "Gold"
+        },
+        {
+            "name": "Book It",
+            "address": "123 Elm St",
+            "phonenumber": "123-456-7890",
+            "website": "www.bookit.com",
+            "imageurl": "images/company-logo-2.png",
+            "memlevel": "Gold"
+        },
+        {
+            "name": "Ikigai",
+            "address": "123 Elm St",
+            "phonenumber": "123-456-7890",
+            "website": "www.ikigai.com",
+            "imageurl": "images/company-logo-3.png",
+            "memlevel": "Gold"
+        },
+        {
+            "name": "MZ Group",
+            "address": "123 Elm St",
+            "phonenumber": "123-456-7890",
+            "website": "www.mz-group.com",
+            "imageurl": "images/company-logo-4.png",
+            "memlevel": "Silver"
+        },
+        {
+            "name": "Build 'N Go",
+            "address": "123 Elm St",
+            "phonenumber": "123-456-7890",
+            "website": "www.buildngo.com",
+            "imageurl": "images/company-logo-5.png",
+            "memlevel": "Member"
+        },
+        {
+            "name": "Castle in the Sky",
+            "address": "123 Elm St",
+            "phonenumber": "123-456-7890",
+            "website": "www.castle.com",
+            "imageurl": "images/company-logo-6.png",
+            "memlevel": "Member"
+        },
+        {
+            "name": "Glass Dome",
+            "address": "123 Elm St",
+            "phonenumber": "123-456-7890",
+            "website": "www.glassdome.com",
+            "imageurl": "images/company-logo-7.png",
+            "memlevel": "Silver"
+        }
+    ]
+}
