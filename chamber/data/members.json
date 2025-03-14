@@ -5,7 +5,7 @@
             "address": "123 Elm St",
             "phonenumber": "123-456-7890",
             "website": "www.horizon.com",
-            "imageurl": "images/company-logo-1.png",
+            "imageurl": "images/company-logo-1.webp",
             "memlevel": "Gold"
         },
         {
@@ -13,7 +13,7 @@
             "address": "123 Elm St",
             "phonenumber": "123-456-7890",
             "website": "www.bookit.com",
-            "imageurl": "images/company-logo-2.png",
+            "imageurl": "images/company-logo-2.webp",
             "memlevel": "Gold"
         },
         {
@@ -21,7 +21,7 @@
             "address": "123 Elm St",
             "phonenumber": "123-456-7890",
             "website": "www.ikigai.com",
-            "imageurl": "images/company-logo-3.png",
+            "imageurl": "images/company-logo-3.webp",
             "memlevel": "Gold"
         },
         {
@@ -29,7 +29,7 @@
             "address": "123 Elm St",
             "phonenumber": "123-456-7890",
             "website": "www.mz-group.com",
-            "imageurl": "images/company-logo-4.png",
+            "imageurl": "images/company-logo-4.webp",
             "memlevel": "Silver"
         },
         {
@@ -37,7 +37,7 @@
             "address": "123 Elm St",
             "phonenumber": "123-456-7890",
             "website": "www.buildngo.com",
-            "imageurl": "images/company-logo-5.png",
+            "imageurl": "images/company-logo-5.webp",
             "memlevel": "Member"
         },
         {
@@ -45,7 +45,7 @@
             "address": "123 Elm St",
             "phonenumber": "123-456-7890",
             "website": "www.castle.com",
-            "imageurl": "images/company-logo-6.png",
+            "imageurl": "images/company-logo-6.webp",
             "memlevel": "Member"
         },
         {
@@ -53,7 +53,7 @@
             "address": "123 Elm St",
             "phonenumber": "123-456-7890",
             "website": "www.glassdome.com",
-            "imageurl": "images/company-logo-7.png",
+            "imageurl": "images/company-logo-7.webp",
             "memlevel": "Silver"
         }
     ]
