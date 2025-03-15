@@ -115,6 +115,7 @@ header {
       justify-content: space-evenly;
       background-color: var(--forth-color);
       padding: 0;
+      z-index: -1;
     }
     
     #menu {
