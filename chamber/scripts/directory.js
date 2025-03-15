@@ -9,7 +9,7 @@ async function getMemberData() {
 getMemberData();
 
 const displayMembers = (members) => {
-  members.forEach((member) => {
+  members.forEach((member, index) => {
     let card = document.createElement("section");
     card.classList.add("card");
 
@@ -23,7 +23,9 @@ const displayMembers = (members) => {
     name.textContent = `${member.name}`;
     logo.setAttribute("src", member.imageurl);
     logo.setAttribute("alt", `Logo of ${member.name}`);
-    logo.setAttribute("loading", "lazy");
+    if (index !== 0) {
+      logo.setAttribute("loading", "lazy");
+    }
     logo.setAttribute("width", "300");
     logo.setAttribute("height", "auto");
     address.textContent = `Address: ${member.address}`;
