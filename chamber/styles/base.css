@@ -1,125 +1,134 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --main-color: #e39f00;
-    --secondary-color: #ff69ab;
-    --accent-color: #ad0000;
-    --third-color: #ffffff;
-    --forth-color: #404040;
+  --main-color: #e39f00;
+  --secondary-color: #ff69ab;
+  --accent-color: #ad0000;
+  --third-color: #ffffff;
+  --forth-color: #404040;
 }
 
-body { 
-    display: grid;
-    min-height: 100vh;
-    min-width: 450px;
-    font-family: Roboto, sans-serif;
+body {
+  display: grid;
+  min-height: 100vh;
+  min-width: 450px;
+  font-family: Roboto, sans-serif;
 }
 
-header, footer {
-    background: var(--main-color);
-    color: var(--forth-color);
-    padding: 1em;
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
+header,
+footer {
+  background: var(--main-color);
+  color: var(--forth-color);
+  padding: 1em;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
 }
 
 header {
-    top: 0;
-    position: sticky;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
+  top: 0;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 1;
 }
 
 .small-logo {
-    width: 100px;
+  width: 100px;
 }
 
 #menu {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border: 1px solid var(--forth-color);
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0;
-    background: none;
-  }
-  #menu::before {
-    content: "☰";
-    color: var(--third-color);
-  }
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--forth-color);
+  border-radius: 5px;
+  cursor: pointer;
+  background: none;
+}
+
+#menu::before {
+  content: "☰";
+  color: var(--third-color);
+}
 
 #menu:hover {
-    background: var(--third-color);
+  background: var(--third-color);
+}
+
+#menu:hover::before {
+  color: var(--forth-color);
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--forth-color);
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+.nav-links a {
+  
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  color: var(--main-color);
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.nav-links a:not(.active)::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:not(.active):hover::after {
+  width: 100%;
+}
+
+@media screen and (min-width: 680px) {
+  header {
+    padding: 2rem 1rem;
+    justify-content: center;
+    max-height: 105.8px;
   }
 
-  #menu:hover::before {
-    color: var(--forth-color);
+  .large-logo {
+    height: 100%;
+    /* padding: auto; */
+    margin-left: 100px;
   }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--forth-color);
-    padding: 10px;
-    position: relative;
-    width: 100%;
-    z-index: 1;
-  }
-  .nav-links.open {
     display: flex;
-  }
-  .nav-links a {
-    margin: 10px 0;
-    text-decoration: none;
-    font-size: large;
-    font-weight: bold;
-    color: var(--main-color);
-    position: relative;
-    padding-bottom: 2px;
-  }
-  .nav-links a.active {
-      color: var(--main-color);
-      border-bottom: 2px solid var(--accent-color);
-  }
-  .nav-links a:not(.active)::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--accent-color);
-    transition: width 0.3s ease;
-  }
-  .nav-links a:not(.active):hover::after {
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--forth-color);
+    padding: 0;
   }
 
-  @media screen and (min-width: 680px) {
-    header {
-      padding: 2rem 1rem;
-      justify-content: center;
-    }
-    .large-logo {
-        width: 400px;
-    }
-    .nav-links {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      background-color: var(--forth-color);
-      padding: 0;
-      z-index: -1;
-    }
-    
-    #menu {
-      display: none;
-    }
-    
+  #menu {
+    display: none;
   }
+}

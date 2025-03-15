@@ -24,8 +24,8 @@ const displayMembers = (members) => {
     logo.setAttribute("src", member.imageurl);
     logo.setAttribute("alt", `Logo of ${member.name}`);
     logo.setAttribute("loading", "lazy");
-    logo.setAttribute("width", "250");
-    logo.setAttribute("height", "150");
+    logo.setAttribute("width", "300");
+    logo.setAttribute("height", "auto");
     address.textContent = `Address: ${member.address}`;
     phone.textContent = `Phone: ${member.phonenumber}`;
     website.textContent = `${member.website}`;
