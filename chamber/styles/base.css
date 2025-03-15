@@ -79,7 +79,6 @@ header {
 }
 
 .nav-links a {
-  
   margin: 10px 0;
   text-decoration: none;
   font-size: large;
@@ -117,7 +116,6 @@ header {
 
   .large-logo {
     height: 100%;
-    /* padding: auto; */
     margin-left: 100px;
   }
 
