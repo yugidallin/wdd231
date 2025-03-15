@@ -4,7 +4,7 @@
 
 :root {
   --main-color: #e39f00;
-  --secondary-color: #ff69ab;
+  --secondary-color: #6976ff;
   --accent-color: #ad0000;
   --third-color: #ffffff;
   --forth-color: #404040;
@@ -40,6 +40,11 @@ header {
 .small-logo {
   width: 100px;
   height: auto;
+}
+
+h1 {
+  text-align: center;
+  color: var(--forth-color);
 }
 
 #menu {
@@ -81,7 +86,7 @@ header {
 .nav-links a {
   margin: 10px 0;
   text-decoration: none;
-  font-size: large;
+  font-size: larger;
   font-weight: bold;
   color: var(--main-color);
   position: relative;
