@@ -103,6 +103,7 @@ section {
     grid-area: footer;
   }
 
+
   #cards {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }

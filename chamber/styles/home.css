@@ -1,0 +1,49 @@
+section {
+    margin: 5px;
+    border: none;
+    background-color: var(--third-color);
+    border-radius: 5px;
+    border: 1px solid var(--forth-color);
+}
+section h2 {
+    margin: 0;
+    text-align: center;
+    color: var(--third-color);
+    background-color: var(--forth-color);
+}
+
+.weather_info {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.weather_info img {
+    width: 150px;
+    height: 150px;
+}
+.weather_info_text {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--forth-color);
+}
+.weather_info_text p>span {
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.weather_forecast p {
+    text-align: center;
+    font-size: 1.5em;
+    /* font-weight: bold; */
+    color: var(--forth-color);
+}
+#tod-forecast{
+    font-weight: bold;
+}
+#day2-forecast{
+    font-weight: bold;
+}
+#day3-forecast {
+    font-weight: bold;
+}

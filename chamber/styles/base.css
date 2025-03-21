@@ -113,6 +113,7 @@ h1 {
 }
 
 @media screen and (min-width: 680px) {
+  
   header {
     padding: 2rem 1rem;
     justify-content: center;

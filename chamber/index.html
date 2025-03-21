@@ -12,16 +12,16 @@
     <link rel="icon" href="images/chamberfavicon.ico">
     <link rel="preload" href="styles/normalize.css" as="style">
     <link rel="preload" href="styles/base.css" as="style">
-    <link rel="preload" href="styles/directory.css" as="style">
+    <link rel="preload" href="styles/home.css" as="style">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Montserrat:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Montserrat:wght@400;700&display=swap"></noscript>
     <script src="scripts/base.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     <title>Taguig Chamber of Commerce Business Directory</title>
   </head>
   <body>
@@ -33,18 +33,42 @@
       <button id="menu" aria-label="Toggle navigation menu"></button>
     </header>
     <nav class="nav-links">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="#">Discover</a>
-      <a href="directory.html" class="active">Directory</a>
+      <a href="directory.html">Directory</a>
       <a href="#">Join</a>
     </nav>
     <main>
-    <h1>Business Directory</h1>
-      <div class="view-toggle">
-        <button id="grid">&#9638;</button>
-        <button id="list">&#9635;</button>
-      </div>
-      <div id="cards" class="grid"></div>
+        <!-- <img src="images/placehorlder.jpg" alt="Banner Image"> -->
+        <h1>Home</h1>
+        <section class="events">
+            <h2>Events</h2>
+        </section>
+        <section class="cur_weather">
+            <h2>Current Weather</h2>
+            <div class="weather_info">
+                <div class="weather_icon">
+                    <img src="images/placeholder.svg" alt="Weather Icon" id="weather-icon">
+                </div>
+                <div class="weather_info_text">
+                    <p>Temperature: <span id="temp"></span>&deg;C</p>
+                    <p>Condition: <span id="condition"></span></p>
+                    <p>High: <span id="high"></span>&deg;</p>
+                    <p>Low: <span id="low"></span>&deg;</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
+                </div>
+        </section>
+        <section class="weather_forecast">
+            <h2>Weather Forecast</h2>
+            <p><span id="day1-label"></span>: <span id="tod-forecast"></span>&deg;C</p>
+            <p><span id="day2-label"></span>: <span id="day2-forecast"></span>&deg;C</p>
+            <p><span id="day3-label"></span>: <span id="day3-forecast"></span>&deg;C</p>
+        </section>
+        <section class="feat_business">
+            
+        </section>
     </main>
     <footer>
       <p><span id="currentYear"></span> Dallin Cabaliza | Philippines</p>
