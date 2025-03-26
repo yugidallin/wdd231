@@ -27,8 +27,8 @@
   <body>
     <header>
       <picture>
-        <source media="(min-width: 680px)" srcset="images/TCC-full-logo-horizontal-resize.webp" class="large-logo">
-        <img src="images/TCC-logo-small.webp" alt="Chamber of Commerce Logo" loading="eager" class="small-logo" width="100" height="auto">
+        <source media="(min-width: 680px)" srcset="images/tcc-full-logo-horizontal-resize.webp" class="large-logo">
+        <img src="images/tcc-logo-small.webp" alt="Chamber of Commerce Logo" loading="eager" class="small-logo" width="100" height="100">
       </picture>
       <button id="menu" aria-label="Toggle navigation menu"></button>
     </header>
@@ -39,38 +39,65 @@
       <a href="#">Join</a>
     </nav>
     <main>
-      <div class="hero">
-        <img class="banner" src="images/placeholder.jpg" alt="BGC Banner Picture" loading="eager">
-      </div>
-      <h1>Home</h1>
+      <div class="content">
+        <h1 class="cur_page">Home</h1>
+        <div class="hero">
+          <img class="banner" src="images/placeholder.webp" alt="BGC Banner Picture" loading="eager">
+          <a href="#" class="cta">Join our Community</a>
+        </div>
         <section class="events">
             <h2>Events</h2>
+            <div class="event_list">
+              <article> 
+                <img src="images/golf-2025ppost.webp" alt="Golf Tournament" class="event_img" loading="lazy">
+                <h3>4th ANNUAL PRESIDENT'S CUP</h3>
+                <p>March 10, 2025</p>
+              </article>
+              <article>
+                <img src="images/Cover-4th-gmm.webp" alt="General Membership Meeting" class="event_img" loading="lazy">
+                <h3>4th General Membership Meeting and Christmas Party</h3>
+                <p>December 9, 2024</p>
+              </article>
+              <article>
+                <img src="images/2nd-networking-night-pic.webp" alt="Networking Night" class="event_img" loading="lazy">
+                <h3>2nd Networking Night</h3>
+                <p>November 13, 2024</p>
+              </article>
+              <article>
+                <img src="images/IMG_5420-scaled.webp" alt="3rd General Membership Meeting" class="event_img" loading="lazy">
+                <h3>3rd General Membership Meeting</h3>
+                <p>September 26, 2024</p>
+              </article>
+            </div>
         </section>
         <section class="cur_weather">
             <h2>Current Weather</h2>
             <div class="weather_info">
-                <div class="weather_icon">
-                    <img src="images/placeholder.svg" alt="Weather Icon" id="weather-icon">
-                </div>
                 <div class="weather_info_text">
                     <p>Temperature: <span id="temp"></span>&deg;C</p>
-                    <p>Condition: <span id="condition"></span></p>
+                    <p>Condition: <span id="condition"></span> 
+                      <div class="weather_icon">
+                        <img src="images/placeholder.svg" alt="Weather Icon" id="weather-icon">
+                      </div>
                     <p>High: <span id="high"></span>&deg;</p>
                     <p>Low: <span id="low"></span>&deg;</p>
                     <p>Humidity: <span id="humidity"></span>%</p>
                     <p>Sunrise: <span id="sunrise"></span></p>
                     <p>Sunset: <span id="sunset"></span></p>
                 </div>
-        </section>
+            </div>
+        </section>  
         <section class="weather_forecast">
             <h2>Weather Forecast</h2>
             <p><span id="day1-label"></span>: <span id="tod-forecast"></span>&deg;C</p>
             <p><span id="day2-label"></span>: <span id="day2-forecast"></span>&deg;C</p>
             <p><span id="day3-label"></span>: <span id="day3-forecast"></span>&deg;C</p>
         </section>
-        <section class="feat_business">
-            
+        <section class="businesses">
+          <h2>Featured Businesses</h2>
+          <div class="feat_business"></div>
         </section>
+      </div> 
     </main>
     <footer>
       <p><span id="currentYear"></span> Dallin Cabaliza | Philippines</p>

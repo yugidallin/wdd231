@@ -28,7 +28,7 @@ async function fetchWeather() {
       throw new Error("Failed to fetch weather data");
     }
     const data = await response.json();
-    console.log(data); // Debug the API response
+    console.log(data);
     updateWeatherUI(data);
   } catch (error) {
     console.error("Error fetching weather data:", error);
@@ -88,13 +88,13 @@ function updateForecastUI(data) {
   const today = new Date().getDate();
   const dailyForecasts = forecastList.filter((forecast) => {
     const forecastDate = new Date(forecast.dt * 1000).getDate();
-    return forecastDate !== today; // Exclude today's data
+    return forecastDate !== today;
   });
 
   // Get the next 3 days' forecasts
   const day1 = dailyForecasts[0];
-  const day2 = dailyForecasts[8]; // Approx. 24 hours later
-  const day3 = dailyForecasts[16]; // Approx. 48 hours later
+  const day2 = dailyForecasts[8];
+  const day3 = dailyForecasts[16];
 
   // Update the UI with temperatures
   todayForecastElement.textContent = Math.round(day1.main.temp);
@@ -121,6 +121,55 @@ function updateForecastUI(data) {
   document.getElementById("day3-label").textContent = day3Name;
 }
 
+// Fetch and Display Featured Businesses
+async function fetchFeaturedBusinesses() {
+  try {
+    const response = await fetch("data/members.json");
+    if (!response.ok) {
+      throw new Error("Failed to fetch members data");
+    }
+    const data = await response.json();
+    displayFeaturedBusinesses(data.members);
+  } catch (error) {
+    console.error("Error fetching featured businesses:", error);
+  }
+}
+
+function displayFeaturedBusinesses(members) {
+  const eligibleBusinesses = members.filter(
+    (member) => member.memlevel === "Gold" || member.memlevel === "Silver"
+  );
+
+  const shuffledBusinesses = eligibleBusinesses.sort(() => 0.5 - Math.random());
+  const selectedBusinesses = shuffledBusinesses.slice(0, 3);
+  const featBusinessSection = document.querySelector(".feat_business");
+
+  selectedBusinesses.forEach((business) => {
+    const card = document.createElement("div");
+    card.classList.add("business-card");
+
+    card.innerHTML = `
+      <img src="${
+        business.imageurl || "images/placeholder.svg"
+      }" alt="Logo of ${business.name}" class="business-logo" loading="lazy">
+      <h3>${business.name || "Business Name"}</h3>
+      <p>Address: ${business.address || "N/A"}</p>
+      <p>Phone: ${business.phonenumber || "N/A"}</p>
+      <a href="${
+        business.website ? `https://${business.website}` : "#"
+      }" target="_blank">${
+      business.website ? "Visit Website" : "No Website"
+    }</a>
+      <p class="membership-tier">${business.memlevel} Member</p>
+    `;
+
+    featBusinessSection.appendChild(card);
+  });
+}
+
 // Call the Fetch Functions
 fetchWeather();
 fetchForecast();
+
+// Call the function to fetch and display featured businesses
+fetchFeaturedBusinesses();

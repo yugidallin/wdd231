@@ -30,15 +30,18 @@ footer {
 }
 
 header {
-  top: 0;
-  position: sticky;
+  /* top: 0;
+  position: sticky; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
+main {
+ background-color: var(--third-color);
+}
 .small-logo {
   width: 100px;
   height: auto;
@@ -72,13 +75,16 @@ h1 {
 }
 
 .nav-links {
+  top: 0;
+  position: sticky;
   display: none;
   flex-direction: column;
   justify-content: center;
   background-color: var(--forth-color);
   padding: 10px;
-  position: relative;
+  z-index: 1;
   width: 100%;
+  right: 8px;
 }
 
 .nav-links.open {
