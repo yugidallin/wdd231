@@ -1,3 +1,12 @@
+.banner {
+    display: flex   ;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: var(--third-color);
+ }
+
 section {
     margin: 5px;
     border: none;
@@ -18,9 +27,10 @@ section h2 {
     justify-items: center;
     align-items: center;
 }
-.weather_info img {
+#weather-icon {
     width: 150px;
     height: 150px;
+    object-fit: contain;
 }
 .weather_info_text {
     margin: 0;
